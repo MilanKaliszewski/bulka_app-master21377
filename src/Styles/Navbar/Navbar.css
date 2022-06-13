@@ -1,0 +1,207 @@
+* {
+  font-family: "Corbel Light", serif;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 80vh;
+  width: 70vw;
+  border-radius: 40px;
+  box-shadow: 0 0 50px 0 #42445a;
+  display: flex;
+}
+.navbar__left-side {
+  width: 40%;
+  height: 100%;
+  background-color: #e09046;
+  border-radius: 40px 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbar__left-side__icon {
+  font-size: 180px;
+  width: 80%;
+  height: 33%;
+  transition: all 0.2s;
+}
+.navbar__left-side__icon:hover {
+  transform: scale(1.05);
+}
+.navbar__left-side__content {
+  width: 100%;
+  height: 33%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navbar__left-side__content__link {
+  text-decoration: underline;
+  font-style: italic;
+}
+.navbar__left-side__content__para {
+  font-size: 18px;
+  justify-self: flex-start;
+}
+.navbar__left-side__content a {
+  text-decoration: none;
+  color: inherit;
+}
+.navbar__right-side {
+  width: 80%;
+  height: 100%;
+  border-radius: 0 40px 40px 0;
+  display: flex;
+  justify-content: center;
+}
+.navbar__right-side__form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  padding-bottom: 40%;
+  padding-top: 7%;
+  row-gap: 15px;
+  width: 50%;
+}
+.navbar__right-side__form__content-choice {
+  font-family: "Consolas", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.navbar__right-side__form__content-name {
+  text-align: left;
+}
+.navbar__right-side__form__content-box:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 11%;
+}
+.navbar__right-side__form__content-box:last-child {
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__right-side__form__content-box {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+  grid-template-rows: 2fr;
+}
+.navbar__right-side__form__content-box__button {
+  padding: 5% 10%;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: medium;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  box-shadow: 4px 4px 12px 0 #42445a;
+  cursor: pointer;
+}
+.navbar__right-side__form__content-box__button:nth-child(1) {
+  background-color: green;
+  cursor: not-allowed;
+}
+.navbar__right-side__form__content-box__button:nth-child(2) {
+  background-color: darkorange;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+}
+.navbar__right-side__form__content-box__plus-minus-sign {
+  font-size: larger;
+  cursor: pointer;
+}
+.navbar__right-side__form__hamburger-icon img {
+  width: 190px;
+  height: 130px;
+}
+
+.rolls {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.roll {
+  width: 30%;
+  height: 35%;
+  background-color: #ffffff;
+  flex-direction: column;
+  display: flex;
+  box-shadow: 0px 0px 7px #777;
+  color: black;
+  padding: 5%;
+  text-align: justify;
+  border-radius: 10px;
+}
+.roll__nazwa {
+  width: 100%;
+  font-size: 130%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.name {
+  font-weight: bold;
+}
+.name:nth-child(1) {
+  width: 100%;
+  align-self: center;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbcbcb;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cbcbcb;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #cbcbcb;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/*# sourceMappingURL=Navbar.css.map */
